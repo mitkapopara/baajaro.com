@@ -1,21 +1,16 @@
 import React from "react";
-import "../styles/HomePage.css";
-
-function HeroSection() {
-  return (
-    <section className="hero">
-      <div className="container">
-        <h1>Hello, I'm Meet</h1>
-        <p>I'm a Professional. Welcome to my portfolio!</p>
-      </div>
-    </section>
-  );
-}
+import SkillsSection from "./SkillsSection";
+import ProjectSection from "./ProjectsSection";
+import HeroSection from "./HeroSection";
+import MyJourney from "./MyJourney";
 
 function HomePage() {
   return (
     <div className="home-page">
       <HeroSection />
+      <SkillsSection />
+      <ProjectSection />
+      <MyJourney />
     </div>
   );
 }
