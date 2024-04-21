@@ -1,0 +1,78 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  background-image: url('../../public/img/background\ hero\ section.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 0;
+}
+
+.hero-section * {
+  position: relative;
+  z-index: 1;
+}
+
+.weather-overlay {
+  padding: 20px;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 2rem; /* Larger text for visibility */
+}
+
+.weather-icon {
+  margin-right: 10px; /* Adjust space between icon and text */
+}
+
+.temperature {
+  font-weight: bold;
+}
+
+button {
+  margin-top: 0px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2e2f2e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #131313;
+}
+
+.typed-text {
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 0.75s steps(40) infinite;
+}
+
+@keyframes blinkCursor {
+  from { border-right-color: black; }
+  to { border-right-color: transparent; }
+}
